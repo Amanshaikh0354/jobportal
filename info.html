@@ -1,0 +1,33 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'employee_navigation.html' %}
+<link  rel="stylesheet" href="#">
+
+
+<marquee style="font-family : 'monotype corsiva' ; font-size : 25px ; color : darkcyan ; background-color : black ; font-weight : bold ; margin-top:0% ">
+    Contact Us
+</marquee>
+<hr>
+
+<div class="container mt-5">
+    <br><br>
+    <div class="slider-area ">
+        <div class="single-slider section-overly slider-height2 d-flex align-items-center" style="background-image:{% static 'images/images.jpeg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2>Contact us</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+
+{% endblock %}
